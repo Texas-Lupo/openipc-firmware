@@ -5,22 +5,22 @@
 ################################################################################
 
 # Use the specific commit hash or branch name (e.g., master)
-QLINK_VERSION = 5a4f48cf5b726a53b343f06f00f30e004309d59d
-QLINK_SITE = $(call github,Vulpisfoglia-dev,QLink,$(QLINK_VERSION))
+FLUKE_VERSION = 0fcbfec95a2f8ed98cd0e4be5e0fdb9c9ffc534d
+FLUKE_SITE = $(call github,Texas-Lupo,fluke,$(FLUKE_VERSION))
 
-QLINK_LICENSE = GPL-3.0
-QLINK_LICENSE_FILES = LICENSE
+FLUKE_LICENSE = GPL-3.0
+FLUKE_LICENSE_FILES = LICENSE
 
 # TARGET_CONFIGURE_OPTS automatically passes the correct ARM cross-compiler, 
 # as well as the -Os, -mcpu, and -mfloat-abi flags defined in your defconfig.
-define QLINK_BUILD_CMDS
-	@echo "Building QLink for ARM target"
+define FLUKE_BUILD_CMDS
+	@echo "Building fluke for ARM target"
 	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D)
 endef
 
 # Installs the compiled binary into the drone's /usr/bin directory and makes it executable
-define QLINK_INSTALL_TARGET_CMDS
-	$(INSTALL) -D -m 0755 $(@D)/qlink $(TARGET_DIR)/usr/bin/qlink
+define FLUKE_INSTALL_TARGET_CMDS
+	$(INSTALL) -D -m 0755 $(@D)/fluke $(TARGET_DIR)/usr/bin/fluke
 endef
 
 $(eval $(generic-package))
