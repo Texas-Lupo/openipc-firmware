@@ -5,7 +5,7 @@
 ################################################################################
 
 # Use the specific commit hash or branch name (e.g., master)
-FLUKE_VERSION = 60facaf60ae9aeb62281080cd217b3e35bdd97c1
+FLUKE_VERSION = b1637130596663c48405e7683d392a606cf956b7
 FLUKE_SITE = $(call github,Texas-Lupo,fluke,$(FLUKE_VERSION))
 
 FLUKE_LICENSE = GPL-3.0
