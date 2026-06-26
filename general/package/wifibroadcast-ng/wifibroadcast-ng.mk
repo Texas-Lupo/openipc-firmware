@@ -4,8 +4,8 @@
 #
 ################################################################################
 
-WIFIBROADCAST_NG_VERSION = af6ba85eface27279709477077d3362c69bb2576
-WIFIBROADCAST_NG_SITE = $(call github,gilankpam,wfb-ng,$(WIFIBROADCAST_NG_VERSION))
+WIFIBROADCAST_NG_VERSION = ae2122c1fb70cd215bbc2e1b517b7b91f9401220
+WIFIBROADCAST_NG_SITE = $(call github,svpcom,wfb-ng,$(WIFIBROADCAST_NG_VERSION))
 WIFIBROADCAST_NG_LICENSE = GPL-3.0
 
 WIFIBROADCAST_NG_DEPENDENCIES += libpcap libsodium
