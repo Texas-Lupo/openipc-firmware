@@ -4,11 +4,11 @@
 #
 ################################################################################
 
-WIFIBROADCAST_NG_VERSION = ae2122c1fb70cd215bbc2e1b517b7b91f9401220
-WIFIBROADCAST_NG_SITE = $(call github,svpcom,wfb-ng,$(WIFIBROADCAST_NG_VERSION))
+WIFIBROADCAST_NG_VERSION = e8033cf9cf5a2081447ae45bf441bc68c28a26da
+WIFIBROADCAST_NG_SITE = $(call github,gilankpam,wfb-ng,$(WIFIBROADCAST_NG_VERSION))
 WIFIBROADCAST_NG_LICENSE = GPL-3.0
 
-WIFIBROADCAST_NG_DEPENDENCIES += libpcap libsodium
+WIFIBROADCAST_NG_DEPENDENCIES += libpcap libsodium libstdcpp
 
 define WIFIBROADCAST_NG_BUILD_CMDS
 	$(MAKE) CC=$(TARGET_CC) CXX=$(TARGET_CXX) LDFLAGS=-s -C $(@D) all_bin
