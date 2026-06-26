@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-WIFIBROADCAST_NG_VERSION = e8033cf9cf5a2081447ae45bf441bc68c28a26da
+WIFIBROADCAST_NG_VERSION = af6ba85eface27279709477077d3362c69bb2576
 WIFIBROADCAST_NG_SITE = $(call github,gilankpam,wfb-ng,$(WIFIBROADCAST_NG_VERSION))
 WIFIBROADCAST_NG_LICENSE = GPL-3.0
 
